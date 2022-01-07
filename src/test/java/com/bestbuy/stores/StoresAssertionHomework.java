@@ -6,10 +6,10 @@ import static org.hamcrest.Matchers.*;
 
 public class StoresAssertionHomework extends StoresExtractionHomework{
 
-    //1. Verify the if the total is equal to 1571
+    //1. Verify the if the total is equal to 1582
     @Test
     public void test001(){
-        response.body("total",equalTo(1571));
+        response.body("total",equalTo(1582));
     }
 
     //2. Verify the if the stores of limit is equal to 10
@@ -48,16 +48,16 @@ public class StoresAssertionHomework extends StoresExtractionHomework{
         response.body("data[3]",hasEntry("state","MN"));
     }
 
-    //8. Verify the store name = West Des Moines of 9th store
+    //8. Verify the store name = Sioux falls of 9th store
     @Test
     public void test008(){
-        response.body("data[8]",hasEntry("name","West Des Moines"));
+        response.body("data[8]",hasEntry("name","Sioux Falls"));
     }
 
-    //9. Verify the storeId = 13 for the 6th store
+    //9. Verify the storeId = 14 for the 6th store
     @Test
     public void test009(){
-        response.body("data[5].id",equalTo(13));
+        response.body("data[5].id",equalTo(14));
     }
 
     //10. Verify the serviceId = 4 for the 7th store of forth service
